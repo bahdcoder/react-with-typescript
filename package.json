@@ -1,0 +1,33 @@
+{
+  "name": "reactwithtypescript.com",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "document.contains": "^1.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.1.1",
+    "use-debounce": "^3.4.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev": "concurrently -i -k npm:dev:client npm:dev:server",
+    "dev:server": "node api/index.js",
+    "dev:client": "parcel src/index.html --port 3000",
+    "prettier": "prettier --write '**/*.{jsx,js}'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.5"
+  }
+}
