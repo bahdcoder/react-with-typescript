@@ -2,7 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import { BASE_URL } from '../helpers/constants'
 
-const ProductTile = ({ name, price, image }) => {
+interface ProductTileProps {
+  name: string
+  price: string
+  image: string
+}
+
+const ProductTile: React.FunctionComponent<ProductTileProps> = ({ name, price, image }) => {
   return (
     <Wrapper data-testid="ProductTile">
       <ImageWrapper>
